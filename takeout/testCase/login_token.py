@@ -11,6 +11,7 @@ def get_md5(password):
 
 print('md5--->',get_md5('80051'))
 
+
 def login(inData):
     '''
     :param inData:账号+密码---字典
