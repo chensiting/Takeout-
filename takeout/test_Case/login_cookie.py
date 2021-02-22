@@ -42,7 +42,9 @@ def addcourse1():
     }
     cookie1 = login({'username':'auto','password':'sdfsdfsdf'})[0]
     res =requests.post(url,data=payload,cookies=cookie1)
-    print(res.json())
+    #print(res.json())
+    return res.json()
+
 addcourse1()
 
 #方案二
@@ -57,9 +59,10 @@ def addcourse2():
         }'''
     }
     session = login({'username':'auto','password':'sdfsdfsdf'})[1]
-    user_cookie = {'sessionid': session, 'token': '123456'}
+    user_cookie = {'sessionid': session}
     res =requests.post(url,data=payload,cookies=user_cookie)
-    print(res.json())
+    #print(res.json())
+    return res.json()
 addcourse2()
 '''
 data--表单数据   name=tom&age=20---  content-type就是 表单
@@ -67,7 +70,7 @@ json--json格式   直接传入字典---     content-type就是 json格式
 params---参数到url里的
 '''
 
-#https协议
+ #https协议
 # requests.packages.urllib3.disable_warnings()#忽略警告
 # import requests
 # def login(inData):
@@ -77,3 +80,5 @@ params---参数到url里的
 #     print(resp.text)
 #
 # login({'username':'auto','password':'sdfsdfsdf'})
+
+62
