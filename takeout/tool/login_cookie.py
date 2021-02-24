@@ -1,4 +1,5 @@
 #time:2021-02-22
+#我自己写的
 
 #1- 登录接口
 import requests
@@ -81,4 +82,3 @@ params---参数到url里的
 #
 # login({'username':'auto','password':'sdfsdfsdf'})
 
-62

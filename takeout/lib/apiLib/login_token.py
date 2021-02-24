@@ -1,5 +1,6 @@
 import requests,hashlib
-from takeout.configs import HOST
+from takeout.configs.config import HOST
+#自己写的旧的登录
 
 #需求：输入一个字符串的密码，输出的一个md5加密
 
