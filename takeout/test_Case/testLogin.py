@@ -52,7 +52,5 @@ for one in range(0,len(dataList)):
 #         print('---fail---')
 #         workSheetNew.write(dataList.index(one) + 1, 12, 'fail')
 
-
-
 #3- 写结果
 workBookNew.save('../data/res.xls')

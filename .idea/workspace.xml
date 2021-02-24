@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e935d498-860e-4a46-9baa-1534590f1dfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/takeout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/takeout.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takeout/data/外卖系统接口测试用例-V1.2.xls" beforeDir="false" afterPath="$PROJECT_DIR$/takeout/data/外卖系统接口测试用例-V1.2.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takeout/lib/apiLib/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeout/lib/apiLib/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takeout/lib/apiLib/login_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeout/lib/apiLib/login_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takeout/test_Case/login_cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeout/tool/login_cookie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takeout/tool/getExcelData.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeout/tool/getExcelData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takeout/test_Case/testLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeout/test_Case/testLogin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/takeout/test_Case/testLogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="502">
+              <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
               <folding>
                 <element signature="e#145#156#0" expanded="true" />
               </folding>
@@ -378,8 +372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/takeout/test_Case/testLogin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="502">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
           <folding>
             <element signature="e#145#156#0" expanded="true" />
           </folding>
