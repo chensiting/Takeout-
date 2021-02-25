@@ -34,6 +34,9 @@ for one in range(0,len(dataList)):
         print('---fail---')
         workSheetNew.write(one +1, 12, 'fail')
 
+#3- 写结果
+workBookNew.save('../data/res.xls')
+
 
 
 #用index下标会有一个bug，当出现相同值，只会取第一个下标，后来更换成len
@@ -52,5 +55,3 @@ for one in range(0,len(dataList)):
 #         print('---fail---')
 #         workSheetNew.write(dataList.index(one) + 1, 12, 'fail')
 
-#3- 写结果
-workBookNew.save('../data/res.xls')

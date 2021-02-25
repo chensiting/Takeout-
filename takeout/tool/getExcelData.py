@@ -11,10 +11,10 @@
 
 import xlrd
 from xlutils.copy import copy
+import json
 #xlrd 新建一个表
 
 #1-打开excel表
-
 def get_excelData(sheetName,startRow,endRow):
     resList = []  #存放空列表
     #1- excel表路径
@@ -33,6 +33,34 @@ def get_excelData(sheetName,startRow,endRow):
         resList.append((reqBodyData,respData))  #为什么有2个小括号：封装一个列表里嵌套元组
     return resList
 
+#可以自动识别用例数  通过用例名来识别
+def get_excelData2(sheetName,caseName):
+    '''
+    :param sheetName: 表名
+    :param caseName: 某一个接口的用例名称
+    :return:
+    '''
+    resList = []  #存放空列表
+    #1- excel表路径
+    excelDir ='../data/外卖系统接口测试用例-V1.2.xls'
+
+    #2- 打开excel对象 --formatting_info=True 保持样式
+    workBook = xlrd.open_workbook(excelDir,formatting_info=True)
+
+    #3- 获取某一个指定的表
+    workSheet =workBook.sheet_by_name(sheetName)
+    #4-读取一列数据
+    #print(workSheet.col_values(0))
+    idx =0 #开始的下标
+    for one in workSheet.col_values(0):
+        if caseName in one:
+            reqBodyData = workSheet.cell(idx,9).value
+            respData = workSheet.cell(idx, 11).value
+            resList.append((json.loads(reqBodyData),json.loads(respData)))   #为了方便后面接口调用，提前转成字典
+        idx +=1
+    return resList
+
+
 
 def set_excelData():
     #1- excel表路径
@@ -50,4 +78,6 @@ if __name__ == '__main__': #ctrl+j 可以打出main
     #print(get_excelData('登录模块'))
     # for one in get_excelData('登录模块'):
     #     print(one)
-    set_excelData()
+    #print(get_excelData2('登录模块','Login'))
+    for one in get_excelData2('登录模块','Login'):
+        print(one)
